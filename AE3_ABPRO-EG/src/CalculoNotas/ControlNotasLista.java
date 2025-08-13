@@ -43,6 +43,7 @@ public class ControlNotasLista {
                     System.out.print("Seleccione el estudiante: ");
                     int idxEstAdd = sc.nextInt() - 1;
                     if (idxEstAdd >= 0 && idxEstAdd < estudiantes.size()) {
+                        System.out.println("Recuerda usar , en vez de .");
                         System.out.print("Ingrese la nota: ");
                         double notaAdd = sc.nextDouble();
                         notasEstudiantes.get(idxEstAdd).add(notaAdd);
@@ -70,6 +71,7 @@ public class ControlNotasLista {
                         System.out.print("Seleccione el número de nota a modificar: ");
                         int idxNotaMod = sc.nextInt() - 1;
                         if (idxNotaMod >= 0 && idxNotaMod < notasEstudiantes.get(idxEstMod).size()) {
+                            System.out.println("Recuerda usar , en vez de .");
                             System.out.print("Ingrese la nueva nota: ");
                             double nuevaNota = sc.nextDouble();
                             notasEstudiantes.get(idxEstMod).set(idxNotaMod, nuevaNota);
